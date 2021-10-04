@@ -47,7 +47,7 @@ class MainWindow(tk.Tk):
             self.entry_sPassword.delete(0, tk.END)
             self.entry_sPassword.insert(0, password)
             self.edit_mode = True
-            self.edit_id = selection[0]
+            self.edit_id = selection[0]+1
 
 
     def item_select(self, event):

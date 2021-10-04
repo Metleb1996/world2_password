@@ -29,6 +29,7 @@ def mod_data(id:int, newservice, newpassword):
 
 def del_data(id:int):
     cursor.execute("DELETE FROM passs WHERE id={}".format(id))
+    con.commit()
     return True
 
 
